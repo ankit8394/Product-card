@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+body
+{
+    background-color: #131313   !important;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.img {
+  object-fit: cover;
+  transform: rotate(25deg);
+  height: 250px;
+  width: 250px;
+  margin-top: -150px;
+  margin-left: 50px;
+}
+h1{
+    text-align: center;
+}
+#product{
+    height: 500px;
+    width: 320px;
+    background-color: #232323;
+    padding: 0;
+    border-radius: 20px;
+}
+.path{
+    background-color: #BCFA2C;
+    height: 300px;
+    clip-path: circle(50% at 80% 25%);
+    padding: 0;
+    margin: 0;
+    border-radius: 20px;
+}
+.title{
+    text-align: center;
+    color: #fff;
+}
