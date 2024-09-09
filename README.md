@@ -1,3 +1,3 @@
 # Product Card
-A stylish product card for e-commerce website. 
+A attractive product card for e-commerce website. Showcasing the product next level.
 
