@@ -15,15 +15,32 @@
             <h1>Product Card</h1>
             <div class="col-sm-12" id="product">
                 <div class="path"></div>
-            <div><img src="assets/green.png" alt="image here" class="img"></div>
+            <div>
+                <img src="assets/green.png" alt="image here" id="img1" class="img">
+                <img src="assets/blue.png" alt="image here" id="img2" class="img">
+                <img src="assets/red.png" alt="image here" id="img3" class="img">
+            </div>
             <div>
                 <h2 class="title">Nike Shoes</h2>
             </div>
-            <div>
-                
+            <div class="color">
+                <label for="">Color :</label>
+                <div>
+                    <button onclick="one()" id="green" ></button>
+                </div>
+                <div>
+                    <button onclick="two()" id="blue"></button>
+                </div>
+                <div>
+                    <button onclick="three()" id="red"></button>
+                </div>
+            </div>
+            <div class="btn-buy">
+                <button>Buy Now</button>
             </div>
             </div>
         </div>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>
