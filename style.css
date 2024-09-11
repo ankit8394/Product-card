@@ -2,63 +2,107 @@
     margin: 0;
     padding: 0;
 }
-img{
+
+img {
     height: 100%;
     width: 100%;
 }
-body
-{
-    background-color: #131313   !important;
+
+body {
+    background-color: #131313 !important;
 }
-.row{
+
+.row {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
-.img{
-  object-fit: cover;
-  transform: rotate(25deg);
-  height: 180px;
-  width: 250px;
-  margin-top: -150px;
-  margin-left: 50px;
-  padding: 0;
 
+.img {
+    object-fit: cover;
+    transform: rotate(25deg);
+    height: 180px;
+    width: 250px;
+    margin-top: -150px;
+    margin-left: 50px;
+    padding: 0;
+    transition: 0.6s ease-in-out;
 }
-.row h1{
+
+.row h1 {
     text-align: center;
     color: #fff;
 }
-#product{
-    height: 500px;
+
+#product {
+    padding-right: 0;
+    height: 420px;
     width: 320px;
     background-color: #232323;
-    padding: 0;
+    padding-bottom: 40px;
     border-radius: 20px;
+    padding-left: 0;
+    transition: 0.6s ease-in-out;
 }
-#path{
+
+#path {
     background-color: #BCFA2C;
     height: 300px;
     clip-path: circle(50% at 80% 25%);
     padding: 0;
     margin: 0;
     border-radius: 20px;
+    transition: 0.6s ease-in-out;
 }
-.title{
+
+.title {
     text-align: center;
     color: #fff;
     font-style: italic;
+    font-size: 40px;
+    transition: 0.6s ease-in-out;
 }
-.color{
+
+.color {
+    display: flex;
+    display: none;
+}
+
+#product:hover {
+    transform: scale(1.05);
+    opacity: 0.9; /* Add a slight opacity change on hover */
+}
+
+#product:hover .img {
+    margin-top: -310px;
+    margin-bottom: 0;
+}
+
+#product:hover .title {
+    margin-top: -70px;
+}
+
+#product:hover #path {
+    clip-path: circle(70.4% at 67% 0);
+    padding: 0;
+    margin: 0;
+    border-radius: 20px;
+}
+
+#product:hover .color,
+#product:hover .btn-buy {
+    display: inline;
     display: flex;
 }
-.color label{
+
+.color label {
     color: #fff;
     font-size: 30px;
-    padding: 0px 35px;
+    padding: 0px 27px;
 }
-#red{
+
+#red {
     height: 35px;
     width: 35px;
     border-radius: 100px;
@@ -66,7 +110,8 @@ body
     margin: 8px;
     border: none;
 }
-#green{
+
+#green {
     height: 35px;
     width: 35px;
     border-radius: 100px;
@@ -74,7 +119,8 @@ body
     margin: 8px;
     border: none;
 }
-#blue{
+
+#blue {
     height: 35px;
     width: 35px;
     border-radius: 100px;
@@ -82,20 +128,26 @@ body
     margin: 8px;
     border: none;
 }
-.btn-buy{
+
+.btn-buy {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
+    display: none;
 }
-.btn-buy button{
-  background-color: #fff;
-  border: none;
-  padding:5px 20px;
-  font-size: 22px;
-  border-radius: 6px;
+
+.btn-buy button {
+    background-color: #fff;
+    border: none;
+    padding: 5px 20px;
+    font-size: 22px;
+    border-radius: 6px;
+    transition: 0.6s ease-in-out;
 }
-.btn button:hover{
+
+.btn-buy button:hover {
     color: #fff;
     background-color: #000;
+    opacity: 0.9; /* Add a slight opacity change on hover */
 }
